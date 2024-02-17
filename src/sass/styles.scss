@@ -1,0 +1,32 @@
+*, 
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+@import "./components/header";
+@import "./components/partner";
+
+@media (min-width: 320px) {
+    .container {
+        width: 300px;
+    }
+}
+
+@media (min-width: 680px) {
+    .container {
+        width: 640px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .container {
+        width: 900px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1000px;
+    }
+}

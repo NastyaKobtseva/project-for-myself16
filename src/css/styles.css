@@ -1,0 +1,307 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.header {
+  background-image: url("../images/tablet-header 1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.logo {
+  color: #FFF;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.registration {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  padding: 19px 0 112px 0;
+}
+.registration__login {
+  color: #FFF;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 13.986px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: transform 0.3s linear;
+}
+.registration__login:hover {
+  transform: scale(1.1) translateY(-4px);
+}
+.registration__signup {
+  color: #FFF;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 13.986px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background-color: transparent;
+  width: 92px;
+  height: 39px;
+  border: 2px solid white;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s linear;
+}
+.registration__signup:hover {
+  transform: scale(1.1) translateY(-4px);
+}
+
+.holiday {
+  text-align: center;
+  padding: 0 0 136px 0;
+}
+.holiday__title {
+  color: #FFF;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 30.041px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.holiday__subtitle {
+  color: #dbd9d9;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 18.025px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.holiday__button {
+  color: #FFF;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 13.999px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 13px 38px 13px 38px;
+  background-color: #FF4E50;
+  border-radius: 40px;
+  cursor: pointer;
+  border: none;
+}
+.holiday__button:hover {
+  animation: button 0.5s linear infinite;
+}
+
+@keyframes button {
+  0% {
+    transform: rotate(0);
+  }
+  45% {
+    transform: rotate(1deg);
+  }
+  95% {
+    transform: rotate(0);
+  }
+}
+@media (min-width: 320px) {
+  .header__top {
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo {
+    order: 2;
+  }
+}
+@media (min-width: 680px) {
+  .header__top {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .logo {
+    order: 1;
+    margin: 28px 0 0 0;
+  }
+  .registration {
+    order: 2;
+  }
+}
+.meet {
+  padding: 63px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.meet__button {
+  color: #FF4E50;
+  font-family: "Montserrat";
+  font-size: 14.001px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 12px 59px 12px 59px;
+  border: 2px solid #FF4E50;
+  border-radius: 40px;
+  cursor: pointer;
+  margin: 29px 0 57px 0;
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s linear, bg-color 0.3s ease;
+}
+.meet__button:hover {
+  animation: btn 4s infinite alternate;
+  color: white;
+}
+.meet__button:hover::before {
+  transform: translateY(0);
+}
+.meet__button::before {
+  border-radius: 40px;
+  content: "";
+  position: absolute;
+  background-color: #FF4E50;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transform: translateX(-100%);
+  transition: transform 0.5s linear;
+}
+.meet__title {
+  color: #333;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 22.004px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@keyframes btn {
+  0% {
+    transform: translateY(0);
+  }
+  45% {
+    transform: translateY(-10px);
+  }
+  95% {
+    transform: translateY(0);
+  }
+}
+.people {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding: 30px 0 0 0;
+}
+
+.lucas {
+  text-align: center;
+  transition: transform 0.3s linear;
+  cursor: pointer;
+}
+.lucas:hover {
+  transform: scale(1.2) translateY(-10px);
+}
+.lucas__title {
+  color: #333;
+  font-family: "Montserrat";
+  font-size: 14.011px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.lucas__text {
+  color: #666;
+  font-family: "Roboto";
+  font-size: 14.011px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  white-space: nowrap;
+  text-align: center;
+}
+
+@media (min-width: 680px) {
+  .people {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .lucas {
+    width: calc(50% - 8px);
+  }
+}
+@media (min-width: 1000px) {
+  .lucas {
+    width: calc(50% - 140px);
+  }
+}
+@media (min-width: 1200px) {
+  .people {
+    gap: 88px;
+  }
+  .lucas {
+    width: calc(30% - 150px);
+  }
+  .hunter {
+    order: 1;
+  }
+  .marsha {
+    order: 3;
+  }
+  .walker {
+    order: 2;
+  }
+  .hunter__girl {
+    order: 4;
+  }
+}
+@media (min-width: 320px) {
+  .container {
+    width: 300px;
+  }
+}
+@media (min-width: 680px) {
+  .container {
+    width: 640px;
+  }
+}
+@media (min-width: 1000px) {
+  .container {
+    width: 900px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+}
